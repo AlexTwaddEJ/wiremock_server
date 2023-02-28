@@ -32,7 +32,7 @@ jobs:
     
     - name: Tag Docker image with ECR repository URL
       run: |
-        docker tag my-custom-wiremock:latest ${{ steps.login-ecr.outputs.registry }}/<ecr-repository-name>:latest
+        docker tag ej-wiremock:latest ${{ steps.login-ecr.outputs.registry }}/wiremock-container-repo:latest
 
     - name: Push Docker image to ECR
       run: |
