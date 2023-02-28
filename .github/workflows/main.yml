@@ -40,3 +40,7 @@ jobs:
     - name: Push Docker image to ECR
       run: |
         docker push ${{ steps.login-ecr.outputs.registry }}/wiremock-container-repo:ej-wiremock-latest
+
+    - name: Update Fargate Service
+      run: |
+        aws ecs update-service --cluster WireMockTestCluster1 --service wiremock-test-server --region eu-west-2 --force-new-deployment
