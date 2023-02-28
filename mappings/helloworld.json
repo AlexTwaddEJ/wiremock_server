@@ -1,10 +1,10 @@
 {
   "request": {
     "method": "GET",
-    "url": "/hello"
+    "url": "/helloworld"
   },
   "response": {
     "status": 200,
-    "bodyFileName": "hello.json"
+    "bodyFileName": "helloworld.json"
   }
 }
