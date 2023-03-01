@@ -1,0 +1,11 @@
+{
+    "request": {
+      "method": "GET",
+      "url": "/test2"
+    },
+    "response": {
+      "status": 200,
+      "body": {"message" : "This test worked!"}
+    }
+  }
+  
