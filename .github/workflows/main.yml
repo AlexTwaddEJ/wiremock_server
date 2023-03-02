@@ -43,4 +43,4 @@ jobs:
 
     - name: Update Fargate Service
       run: |
-        aws ecs update-service --cluster WireMockTestCluster1 --service wiremock-test-server --region eu-west-2 --force-new-deployment
+        aws ecs update-service --cluster WireMockTestCluster1 --service wiremock-loadbalanced --region eu-west-2 --force-new-deployment
