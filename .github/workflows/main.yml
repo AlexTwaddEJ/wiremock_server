@@ -42,4 +42,4 @@ jobs:
 
     - name: Update Fargate Service
       run: |
-        aws ecs update-service --cluster wiremock-cluster --service wiremock-service --region eu-west-1 --force-new-deployment
+        aws ecs update-service --cluster wiremock-cluster --service wiremock-service-5 --region eu-west-1 --force-new-deployment
